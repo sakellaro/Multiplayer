@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
         CalculateTargetMovement();
 
         // Check if we should jump this frame
-        CheckForJump();
+        //CheckForJump();
     }
 
     private void LocalFixedUpdate()
@@ -114,12 +114,12 @@ public class Player : MonoBehaviour
         _targetMovement = cameraLookForward * inputMovement;
     }
 
-    private void CheckForJump()
+    /*private void CheckForJump()
     {
         // Jump if the space bar was pressed this frame and we're not already jumping, trigger the jump
         if (Input.GetKeyDown(KeyCode.Space) && !_jumping)
             _jumpThisFrame = true;
-    }
+    }*/
 
     private void MovePlayer()
     {
